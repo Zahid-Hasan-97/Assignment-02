@@ -37,7 +37,7 @@
         <section class="part2">
             <section class="container-2">
                 <div class="p-1">
-                    <p><span><b>Get body in</b><br></span><span style="font-family: Miama, sans;">shape</span><b>& stay healthy</b></p>
+                    <p><span><b>Get body in</b><br></span><span style="font-family: Miama, sans;">shape</span><b> & stay healthy</b></p>
                 </div>
     
                 <div class="p-2">
@@ -95,26 +95,26 @@
         </section>
         <section class="habits">
             <div class="movement">
-                <div class="border"><img src="images/image 3.png" alt=""></div>
-                <h3>Movement</h3>
+                <div class="border"><img class="img3" src="images/image 3.png" alt=""></div>
+                <h3 class="m">Movement</h3>
                 <p class="p">We believe fitness should be accessible to everyone</p>
             </div>
 
             <div class="time">
-                <div class="border"><img src="images/image 2.png" alt=""></div>
-                <h3>Time</h3>
+                <div class="border"><img class="img2" src="images/image 2.png" alt=""></div>
+                <h3 class="t">Time</h3>
                 <p class="p">We believe fitness should be accessible to everyone</p>
             </div>
             
             <div class="practice">
-                <div class="border"><img src="images/image 4.png" alt=""></div>
-                <h3>Practice</h3>
+                <div class="border"><img class="img4" src="images/image 4.png" alt=""></div>
+                <h3 class="pr">Practice</h3>
                 <p class="p">We believe fitness should be accessible to everyone</p>
             </div>
 
             <div class="weight">
-                <div class="border"><img src="images/image 5.png" alt=""></div>
-                <h3>Weight Loss</h3>
+                <div class="border"><img class="img5" src="images/image 5.png" alt=""></div>
+                <h3 class="w">Weight Loss</h3>
                 <p class="p">We believe fitness should be accessible to everyone</p>
             </div>
 
@@ -122,39 +122,45 @@
 
     </section>
 
-
+    <!-- third-part -->
     <section class="third-part">
-        <div class="third-child">
-            <h1>Run an Extra 
-                Mile Easily</h1>
-            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-            <button><a href="">Join Now</a></button>
-        </div>
-
-        <div class="run">
-            <img src="images/run.jpg" alt="">
-        </div>
-    </section>
-
-
-    <section class="forth-part">
-        <div class="forth-des-p">
-            <h1 class="forth-des">Trainings and Exercises</h1>
-            <p class="forth-p">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-        </div>
-
-        <div class="exercise-row-1">
-            <img src="images/exercise1.jpg" alt="" class="item1">
-            <img src="images/exercise2.png" alt="" class="item2">
-            <img src="images/exercise3.png" alt="" class="item3">
-        </div>
-        <div class="exercise-row-2">
-            <img src="images/exercise4.png" alt="" class="item4">
-            <img src="images/exercise5.jpg" alt="" class="item5">
-            <img src="images/exercise6.jpg" alt="" class="item6">
-        </div>
+        <section class="third-child">
+            <div class="third-child1">
+                <h1 class="run-title">Run an Extra 
+                    Mile Easily</h1>
+                <p class="run-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <button class="run-join-btn"><a href="">Join Now</a></button>
+            </div>
+    
+            <div class="run">
+                <img src="images/run.jpg" alt="">
+            </div>
+        </section>
         
     </section>
+
+    <!-- forth-part -->
+    <section class="forth-part">
+        <section class="forth-child">
+            <div class="forth-des-p">
+                <h1 class="forth-des">Trainings and Exercises</h1>
+                <p class="forth-p">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+    
+            <div class="exercise-row-1">
+                <img src="images/exercise1.jpg" alt="" class="item1">
+                <img src="images/exercise2.png" alt="" class="item2">
+                <img src="images/exercise3.png" alt="" class="item3">
+            </div>
+            <div class="exercise-row-2">
+                <img src="images/exercise4.png" alt="" class="item4">
+                <img src="images/exercise5.jpg" alt="" class="item5">
+                <img src="images/exercise6.jpg" alt="" class="item6">
+            </div>
+            
+        </section>
+    </section>
+    
 
     <section class="bmi-head">
         <h1 class="bmi-head-h">BMI Calculator</h1>
@@ -162,7 +168,7 @@
     </section>
 
 
-
+<!-- fifth-part -->
     <section class="fifth-part">
 
         <section class="fifth-child-1">
@@ -194,13 +200,21 @@
                 <p class="fp">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
             </div>
 
-            <div class="select-box">
-                <p class="elements1">Height/cm</p>
-                <p class="elements2">Weight/kg</p>
-                <p class="elements3">Age</p>
-                <p class="elements4">Sex</p>
-                <p class="elements5">Select an activity factor</p>
-            </div>
+            <form class="select-box">
+                <input type="text" placeholder="Height/cm">
+                <input type="text" placeholder="Weight/kg">
+                <input type="text" placeholder="Age">
+                <!-- <input type="text" placeholder="Sex">
+                <input type="text" placeholder="Select an activity factor"> -->
+                <div class="dropdown-container">
+                    <input type="text" placeholder="Sex">
+                    <div class="dropdown-content">
+                        <p>Male</p>
+                        <p>Female</p>
+                        <p>Other</p>
+                    </div>
+                </div>
+            </form>
 
             <button class="calculate">Calculate</button>
 
@@ -208,24 +222,68 @@
 
     </section>
 
-    <section>
-        <section>
-            <h1>Meet Our Team</h1>
-            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-        </section>
-
-        <section>
-
+<!-- sixth-part -->
+    <section class="sixth-part">
+        <section class="sixth-child">
+            <section class="meet-team">
+                <h1 class="mh1">Meet Our Team</h1>
+                <p class="mp">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </section>
+    
+            <section class="team">
+                <section class="team1">
+                    <div><img class="trainer1" src="images/trainer1.png" alt=""></div>
+                    <div><img class="trainer2" src="images/trainer4.png" alt=""></div>
+                </section>
+                <section class="team2">
+                    <div><img class="trainer3" src="images/trainer2.png" alt=""></div>
+                    <div><img class="trainer4" src="images/trainer5.png" alt=""></div>
+                </section>
+                <section class="team3">
+                    <div><img class="trainer5" src="images/trainer3.png" alt=""></div>
+                    <div><img class="trainer6" src="images/trainer6.png" alt=""></div>
+                </section>
+            </section>
         </section>
     </section>
 
 
-    <main>
+    <footer class="footer">
+        <section class="footer-child">
 
-    </main>
+            <section class="getstarted1">
+                <h1 class="fitness-last"><i>Fitness</i></h1>
+                <p class="footer-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            </section>
 
-    <footer>
+            <section class="getstarted2">
+                <h1 class="chart">Get Started</h1>
+                <ul>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Affiliate Program</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </section>
 
+            <section class="getstarted3">
+                <h1 class="chart">Get Started</h1>
+                <ul>
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">Platform</a></li>
+                    <li><a href="">Workout Library</a></li>
+                    <li><a href="">App Design</a></li>
+                </ul>
+
+            </section>
+        </section>
+        <div class="last-border">
+        
+        </div>
+
+        <div>
+            <p class="last-line">All right reserved @Fitness 2024</p>
+        </div>
     </footer>
 </body>
 </html>
