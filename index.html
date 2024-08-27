@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
                 
 
-    <!-- link style.css -->
-     <link rel="stylesheet" href="styles/style.css">
+<!-- link style.css -->
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/mobile.css">
 
 </head>
 <body class="work-sans-font">
@@ -33,12 +34,20 @@
                         <li><a href="" class="item4">About</a></li>
                     </ul>
                 </nav>
+
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </header>
     
             <section class="part2">
                 <section class="container-2">
                     <div class="p-1">
-                        <p><span><b>Get body in</b><br></span><span style="font-family: Miama, sans;">shape</span><b> & stay healthy</b></p>
+                        <p class="p-1-p"><span><b>Get body in</b><br></span><span style="font-family: Miama, sans;">shape</span><b> & stay healthy</b></p>
                     </div>
         
                     <div class="p-2">
@@ -47,6 +56,7 @@
         
                     <div class="join-download">
                         <button class="join-btn"><a href="">Join Club Now!</a></button>
+                        <button class="join-btn-mobile"><a href="">Join Now!</a></button>
         
                         <button class="download-btn"><a href="">Download App</a></button>
                     </div>
@@ -78,6 +88,8 @@
             </div>
             
         </div>
+
+        <div class="triangle"></div>
     </header>
 
     <!-- second-part -->
@@ -123,37 +135,16 @@
                 <h1 class="run-title">Run an Extra 
                     Mile Easily</h1>
                 <p class="run-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+
                 <button class="run-join-btn"><a href="">Join Now</a></button>
             </div>
-    
+
             <div class="run">
                 <img src="images/run.jpg" alt="">
             </div>
         </section>
         
     </section>
-
-    <!-- forth-part -->
-    <!-- <section class="forth-part">
-        <section class="forth-child">
-            <div class="forth-des-p">
-                <h1 class="forth-des">Trainings and Exercises</h1>
-                <p class="forth-p">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-            </div>
-    
-            <div class="exercise-row-1">
-                <img src="images/exercise1.jpg" alt="" class="item1">
-                <img src="images/exercise2.png" alt="" class="item2">
-                <img src="images/exercise3.png" alt="" class="item3">
-            </div>
-            <div class="exercise-row-2">
-                <img src="images/exercise4.png" alt="" class="item4">
-                <img src="images/exercise5.jpg" alt="" class="item5">
-                <img src="images/exercise6.jpg" alt="" class="item6">
-            </div>
-            
-        </section>
-    </section> -->
 
 <!-- fifth-part -->
     <section class="bmi-root">
@@ -197,7 +188,7 @@
                     <div class="box1">
                     <input type="number" placeholder="Height/cm">
                     <input type="number" placeholder="Weight/kg">
-                    <input type="number" placeholder="Age">
+                    <input type="number"   placeholder="Age">
                     <select class="sex-box">
                         <option class="sex" value="text" disabled selected>Sex</option>
                         <option value="male">Male</option>
@@ -272,8 +263,89 @@
                     </div>
                 </section>
             </section>
+            <section class="team-mobile">
+                <section class="team-mobile-child">
+                    <div class="tr-2"></div>
+                    <div class="tr-5"></div>
+                    <div class="tr-3"></div>
+                    <div class="tr-6"></div>
+
+                    <div class="t-des2">
+                        <h1 class="h-clr h-clr-mobile">Cameron Williamson</h1>
+                        <p class="p-clr">Trainer</p>
+                    </div>
+                    <div class="t-des5">
+                        <h1 class="h-clr">Cody Fisher</h1>
+                        <p class="p-clr">Trainer</p>
+                    </div>
+                    <div class="t-des3">
+                        <h1 class="h-clr">Darrell Steward</h1>
+                        <p class="p-clr">Trainer</p>
+                    </div>
+                    <div class="t-des6">
+                        <h1 class="h-clr">Theresa Webb</h1>
+                        <p class="p-clr">Trainer</p>
+                    </div>
+                </section>
+
+            </section>
         </section>
     </section>
+
+<!-- forth-part -->
+    <section class="plan">
+        <section class="plan-root">
+            <h1 class="plan-head">Member Pricing Plan </h1>
+            <p class="plan-head-p">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            <section class="plan-child">
+                <div class="plan1">
+                    <img src="images/dumbbell.png" alt="">
+                    <h1 class="plan-h">Standard</h1>
+                    <p class="plan-price-month"><span class="plan-price"> 50$</span> <span class="plan-price-p">/Month</span></p>
+                    <div class="plan-p">
+                        <p>All Equipment</p>
+                        <p>Locker Room</p>
+                        <p>Bathroom</p>
+                        <P>Wifi</P>
+                    </div>
+                    <button class="plan-btn plan-btn1">Learn More</button>
+                </div>
+
+                <div class="plan2">
+                    <img src="images/weight-lifting.png" alt="">
+                    <h1 class="plan-h">Complete</h1>
+                    
+                    <p class="plan-price-month"><span class="plan-price"> 100$</span> <span class="plan-price-p">/Month</span></p>
+                    <div class="plan-p">
+                        <p>All Equipment</p>
+                        <p>Yoga Class</p> 
+                        <p>Trainer Support</p>
+                        <p>Locker Room</p>
+                        <p>Bathroom</p>
+                        <P>Wifi</P>
+                    </div>
+                    <button class="plan-btn">Learn More</button>
+                </div>
+
+                <div class="plan3">
+                    <img src="images/strength.png" alt="">
+                    <h1 class="plan-h">Premium</h1>
+                    <p class="plan-price-month"><span class="plan-price"> 200$</span> <span class="plan-price-p">/Month</span></p>
+                    <div class="plan-p">
+                        <p>Personal Equipment</p>
+                        <p>Yoga Class</p> 
+                        <p>Personal Trainer</p>
+                        <p>Locker Room</p>
+                        <p>Bathroom</p>
+                        <P>Wifi</P>
+                    </div>
+                    <button class="plan-btn">Learn More</button>
+                </div>
+            </section>
+        </section>
+    </section>
+
+<!-- ------------------------------------------------- -->
 <!-- footer -->
     <footer class="footer">
         <section class="footer-child">

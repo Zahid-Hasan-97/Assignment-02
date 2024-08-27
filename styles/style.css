@@ -10,9 +10,20 @@
 
 .fitness , .navbar{
 }
+.menu-icon{
+    display: none;
+    width: 35px;
+    /* margin: 1em 0 0 1em; */
+}
+.menu-icon div{
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 25px;
+    background-color: white;
+}
 .fitness{
     color: #E6533C;
-    font-size: 2em;
+    font-size: 2.9em;
     place-content: center;
 }
 .navbar{
@@ -36,7 +47,6 @@ nav>ul{
     width: 70%;
     height: 15%;
     padding: 28% 65% 28% 65%;
-    border: 1px solid black;
     border-radius: 39px;
     background-color: #E6533C;
     border: hidden;
@@ -56,7 +66,6 @@ li:first-child{
     src: url('../font/Miama-Regular.ttf');
 }
 .header-container{
-    border: 1px solid purple;
     width: 100%;
     height: auto;
     background-image: linear-gradient(to bottom, #000000, #434343, #000000);
@@ -68,45 +77,61 @@ li:first-child{
     margin-right: auto;
 }
 .container-1{
-    border: 1px solid red ;
     width: 100%;
-    height: 30%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container-2{
 
+.part2{
+    width: 100%;
+    display: flex;
 }
-
+.container-2{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
 .p-1{
-    border: 1px solid black;
+
     font-size: 6rem;
     color: white;
-    width: 55%;
-    height: 65%;
+    width: 80%;
+    height: 58%;
     line-height: 1;
 }
+.p-1-p{
+    /* margin-top: 8%;
+    margin-bottom: -2%; */
+}
 .p-2{
-    border: 1px solid orange;
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.50);
-    width: 55%;
-    height: 10%;
+    width: 60%;
+    height: 12%;
+    line-height: 1.5;
+    margin-top: 1%;
+
 }
 .join-download{
-    border: 1px solid red;
     width: 50%;
-    height: 9%;
+    height: 8%;
     display: flex;
     justify-content: space-between;
-    margin-top: 2.5%;
+    margin-top: 6%;
 }
 .join-btn{
+    display: block;
     background-color: #E6533C;
     border-radius: 42px;
     border: #E6533C;
     padding: 3% 10%;
+}
+.join-btn-mobile{
+    display: none;
 }
 .join-btn>a{
     color: white;
@@ -126,16 +151,11 @@ li:first-child{
     font-size: 1.2rem;
     font-weight: 600;
 }
-.part2{
-    border: 1px solid white;
-    display: flex;
-    place-content: center;
-}
 .first-image{
-    border: 1px solid blue;
-    width: 25%;
-    height: auto;
+    width: 30%;
+    height: 45rem;
     display: flex;
+    margin-right: 4%;
 }
 .workout500{
     width: 10%;
@@ -144,8 +164,8 @@ li:first-child{
     border: 1px solid rgba(255, 255, 255, 0.1);;
     border-radius: 20px;
     background-color: #434343;
-    top: 29%;
-    left: 84%;
+    top: 38%;
+    left: 79.5%;
     text-align: start;
     padding: 1% 0% 0% 1%;
 }
@@ -157,15 +177,9 @@ li:first-child{
 .workout500>p{
     margin-top: 0;
 }
-/* .workcount{
-} */
 .workout500, .tutorial350{
     color: white;
 }
-/* .img-round{
-    padding-left: 8vh;
-} */
-
 .play{
     width: 20%;
     height: 40%;
@@ -184,8 +198,8 @@ li:first-child{
     align-content: space-evenly;
     width: 12%;
     height: 12%;
-    top: 66%;
-    left: 64%;
+    top: 77%;
+    left: 57.5%;
 }
 .tutorial-child{
 }
@@ -196,9 +210,17 @@ li:first-child{
     color: rgba(255, 255, 255, 0.65);
     margin-top: -1em;
  }
+
+.triangle{
+    position: absolute;
+    top: 81.6%;
+    left: 59.8%;
+    border: 15px solid #E6533C;
+    border-left-color: white;
+    border-right-style: none;
+}
 /* ------------------------------------------------------ */
 .second-part{
-    border: 1px solid #E6533C;
     width: 100%;
     height: auto;
     background-color: #000000;
@@ -206,33 +228,30 @@ li:first-child{
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    padding-top: 5%;
 }
 .habit-des{
-    border: 1px solid navy;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 .habit-h1{
-    border: 1px solid purple;
-    font-size: 48px;
+    font-size: 58px;
     font-weight: 800;
     color: white;
 }
-.p{
+/* .p{
     color: #808080;
     margin-top: -5%;
-}
+} */
 .habits{
-    border: 1px solid teal;
     width: 80%;
     height: auto;
     display:flex;
 }
 .movement, .time, .practice, .weight{
-    border: 1px solid fuchsia;
     width: 26%;
     height: auto;
     display:flex;
@@ -246,14 +265,13 @@ li:first-child{
     font-weight: 600;
 }
 .ps0{
-    border: 1px solid red;
     color: #808080;
     width: 90%;
     font-size: 110%;
     text-align: center;
+    margin-top: -2%;
 }
 .ps1, .ps2, .ps3, .ps4{
-    border: 1px solid yellowgreen;
     width: 70%;
     height: auto;
     color: #808080;
@@ -261,15 +279,15 @@ li:first-child{
     margin-top: -10px;
 }
 .border{
-    width: 80%;
-    height: auto;
+    width: 63.4%;
+    height: 63%;
     border: 5px solid #424242;
     border-radius: 50%;
     overflow: hidden;
 }
 .img2, .img3, .img4, .img5{
-    width: 310px;
-    height: 310px;
+    width: 240px;
+    height: 240px;
 }
 /* .movement{
 }
@@ -304,29 +322,28 @@ li:first-child{
 }
 
 .third-child1{
-    border: 1px solid white;
     width: 40%;
     height: 100%;
     margin-left: 5%;
 }
 .run-title{
-    border: 1px solid red;
     width: 60%;
-    height: 30% ;
+    height: 35% ;
     font-size: 50px;
     font-weight: 900;
     color: white;
     margin-top: 5%;
 }
 .run-des{
+
     width: 95%;
-    border: 1px solid aquamarine;
     color: #919191;
     line-height: 1.5rem;
     letter-spacing: 0.3;
     font-size: 19px;
     font-weight: 400;
-    margin-bottom: 6%;
+    margin-bottom: 5%;
+    margin-top: -2%;
 }
 .run{
     border: 1px solid #424242;
@@ -346,75 +363,123 @@ li:first-child{
     background-color: #E6533C;
     border-radius: 42px;
     border: #E6533C;
-    width: 50%;
+    width: 45%;
     height: 15%;
 }
 .run-join-btn>a{
     color: white;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 /* ------------------------------------------------------------------- */
 /* forth-part */
-/* 
-.forth-part{
+
+.plan{
+    width: 100%;
+    height: auto;
     background-color: #000000;
+    padding-bottom: 10%;
+}
+.plan-root{
+    width: 80%;
+    height: auto;
+    background-color: #222222;
+    border: 1px solid #222222;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
 }
-.forth-child{
-    border: 5px solid red;
-    width: 1440px;
-    height: 702px;
-    
-}
-.forth-des{
+.plan-head{
+    width: 33%;
     font-size: 48px;
     font-weight: 800;
     color: white;
 }
-.forth-des-p{
-    height: 20vh;
-    width: 37vw;
-    line-height: 20px;
+.plan-head-p{
+    color: #8D8D8D;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5%;
 }
-.forth-des{
-
-}
-
-.forth-p{
-    color: #808080;
-}
-
-.forth-part img{
-    width: 100%;
-    height: 100%;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 0, 0, 0.3);
-}
-.exercise-row-1{
-    height: 265px;
+.plan-child{
+    width: 90%;
     display: flex;
+    justify-content: space-evenly;
+    
 }
-
-.exercise-row-2{
-    height: 265px;
+.plan1{
+}
+.plan2{
+}
+.plan3{
+}
+.plan1, .plan2, .plan3{
+    width: 15%;
+    height: auto;
     display: flex;
-
+    flex-direction: column;
+    place-items: center;
+    background-color: #000000;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000  ;
+    padding: 5%;
 }
-.exercise div{
-} */
+.plan-root img{
+    width: 60%;
+    height: auto;
+}
+.plan-h{
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15%;
+}
+.plan-p{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    color: #8D8D8D;
+    line-height: 0.5;
+}
+.plan-price{
+    color: #E6533C;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -10%;
+}
+.plan-price-p{
+    color: #8D8D8D;
+}
+.plan-price-month{
+    margin-top: -5%;
+    margin-bottom: 15%;
+}
+.plan-btn{
+    border: 1px solid white;
+    background-color: #E6533C;
+    border-radius: 42px;
+    border: #E6533C;
+    width: 70%;
+    padding: 8% 10%;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 20%;
+}
+.plan-btn1{
+    margin-top: 60%;
+} 
 /* ------------------------------------------------------------- */
 .bmi-root{
-    border: 1px solid red;
     width: 100%;
     height: auto;
     background-color: #000000;
@@ -423,7 +488,6 @@ li:first-child{
 
 }
 .bmi-head{
-    border: 1px solid yellow;
     width: 50%;
     height: auto;
     display: flex;
@@ -441,7 +505,6 @@ li:first-child{
 }
 .bmi-head-p{
     width: 80%;
-    border: 1px solid green;
     font-size: 110%;
     color: #B0B0B0;
     margin-top: 2%;
@@ -451,7 +514,6 @@ li:first-child{
 /* fifth-part */
 
 .fifth-part{
-    border: 1px solid purple;
     width: 100%;
     height: auto;
     background-color: #222222;
@@ -459,7 +521,6 @@ li:first-child{
     place-content: center;
 }
 .fifth-root{
-    border: 1px solid orange;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -467,7 +528,6 @@ li:first-child{
     /* align-content: space-between; */
 }
 .fifth-child-1{
-    border: 1px solid seagreen;
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -475,7 +535,6 @@ li:first-child{
     justify-items: flex-start;
 }
 .fifth-child-2{
-    border: 1px solid blue;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -484,7 +543,6 @@ li:first-child{
     gap: 10px;
 }
 .measure-chart{
-    border: 1px solid white;
     width: 90%;
     height: 55%;
     display: flex;
@@ -523,7 +581,6 @@ li:first-child{
     font-size: 120%;
 }
 .select-box{
-    border: 1px solid maroon;
     width: 100%;
     height: auto;
     display: flex;
@@ -540,10 +597,8 @@ li:first-child{
     margin: 1% 0% 1% 1%;
 }
 .box1{
-    border: 1px solid white;
 }
 .box2{
-    border: 1px solid lawngreen;
 }
 ::placeholder{
     color: #B0B0B0;
@@ -552,7 +607,6 @@ li:first-child{
     text-indent: 10%;
 }
 .sex-box{
-    border: 1px solid red;
     width: 48%;
     height: auto;
     border: 2px solid #393939;
@@ -602,13 +656,11 @@ li:first-child{
 }
 /* ----------------------------------------------------------------- */
 .sixth-part{
-    border: 1px solid red;
     width: 100%;
     height: auto;
     background-color: #000000;
 }
 .sixth-child{
-    border: 1px solid yellow;
     width: 80%;
     height: auto;
     padding-bottom: 6%;
@@ -616,7 +668,6 @@ li:first-child{
     margin-right: auto;
 }
 .meet-team{
-    border: 1px solid white;
     width: 60%;
     height: auto;
     display: flex;
@@ -629,12 +680,10 @@ li:first-child{
     margin-right: auto;
 }
 .mh1{
-    border: 1px solid green;
     font-size: 3rem;
     font-weight: 800;
 }
 .mp{
-    border: 1px solid tomato;
     width: 87%;
     font-size: 1.1rem;
     text-align: center;
@@ -642,17 +691,56 @@ li:first-child{
     margin-top: -3%;
 }
 .team{
-    border: 2px solid palevioletred;
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 0.1);
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
-    /* border-style: none;
-    border-radius: 20px; */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-style: none;
+    border-radius: 20px;
+    padding: 0.1% 0% 0.1% 0% ;
+}
+.team-mobile{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.team-mobile-child{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-style: none;
+    border-radius: 20px;
+}
+.tr-2 , .tr-3 , .tr-5 , .tr-6{
+    border: 1px solid white ;
+    width: 60%;
+    height: 50rem;
+    background-size: cover;
+    border: 1px solid #313131;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.tr-2{
+    background-image: url(../images/trainer2.png);
+    margin: 5% 0% 5% 0%;
+}
+.tr-5{
+    background-image: url(../images/trainer5.png);
+    margin: 0% 0% 5% 0%;
+}
+.tr-3{
+    background-image: url(../images/trainer3.png);
+}
+.tr-6{
+    background-image: url(../images/trainer6.png);
+    margin: 5% 0% 5% 0%;
 }
 .team1{
     position: relative;
-    border: 1px solid red;
     width: 96%;
     height: 50%;
     display: flex;
@@ -662,7 +750,6 @@ li:first-child{
 
 .team2{
     position: relative;
-    border: 1px solid blue;
     width: 96%;
     height: 50%;
     display: flex;
@@ -713,14 +800,15 @@ li:first-child{
 }
 
 .trainer1, .trainer2, .trainer3, .trainer4, .trainer5, .trainer6{
-    border: 1px solid lawngreen;
     width: 31.5%;
     border-radius: 20px;
     filter: brightness(0.8);
 }
 .trainer4{
+
     object-fit: cover;
     object-position: 61% 33%;
+    
 }
 .trainer5{
 }
@@ -730,13 +818,11 @@ li:first-child{
 /* ------------------------------------------------------------------------ */
 
 .footer{
-    border: 1px solid white;
     width: 100%;
     height: auto;
     background-color: #1A1A1A;
 }
 .footer-child{
-    border: 1px solid purple;
     width: 80%;
     height: auto;
     display: flex;
@@ -750,39 +836,31 @@ li:first-child{
     color: white;
 }
 .getstarted1{
-    border: 1px solid rgb(21, 216, 167);
     width: 47%;
 }
 .getstarted2{
-    border: 1px solid rgb(0, 56, 240);
     width: 20%;
     height: auto;
     margin-top: 4%;
 }
 .getstarted2>ul{
-    border: 1px solid rgb(206, 2, 172);
     width: 75%;
 }
 .getstarted3>ul{
-    border: 1px solid rgb(240, 11, 221);
     width: 75%;
 }
 .getstarted3{
-    border: 1px solid rgb(219, 149, 18);
     width: 20%;
     height: auto;
     margin-top: 4%;
 }
 .getstarted2>ul>li>a{
-    border: 1px solid rgb(231, 7, 7);
     color: #8D8D8D;
 }
 .getstarted3>ul>li>a{
-    border: 1px solid rgb(233, 7, 7);
     color: #8D8D8D;
 }
 .getstarted2>ul>li{
-    border: 1px solid rgb(7, 252, 40);
     list-style: none;
     padding: 2% 2% 2% 0%;
     font-size: 1.3rem;
@@ -791,7 +869,6 @@ li:first-child{
     margin-left: -18%;
 }
 .getstarted3>ul>li{
-    border: 1px solid rgb(44, 236, 18);
     list-style: none;
     padding: 2% 2% 2% 0%;
     font-size: 1.3rem;
@@ -802,7 +879,6 @@ li:first-child{
 .fitness-last{
     width: 80%;
     height: auto;
-    border: 1px solid rgb(43, 99, 202);
     /* padding: 2%; */
     color: #E6533C;
     font-size: 4.5rem;
@@ -810,11 +886,11 @@ li:first-child{
     place-content: center;
 }
  .footer-des{
-    border: 2px solid burlywood;
     width: 75%;
     color: #8D8D8D;
     font-size: 110%;
     font-weight: 400;
+    line-height: 2;
     margin-top: -6%;
  }
 
